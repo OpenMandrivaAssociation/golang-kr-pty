@@ -1,14 +1,13 @@
 %define prerelease 3b1f6487b7fc649d5f146df04e623bd55ba1bf7f
 %define import_path github.com/kr/pty
-%define gopath %{_libdir}/golang
-%define gosrc %{gopath}/src/pkg/%{import_path}
+%define gosrc %{go_dir}/src/pkg/%{import_path}
 %define shortcommit %(c=%{prerelease}; echo ${c:0:7})
 %define debug_package %nil
 
 Summary:	PTY interface for Go
 Name:		golang-kr-pty
 Version:	0.1.git%{shortcommit}
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Other
 Url:		https://%{import_path}
