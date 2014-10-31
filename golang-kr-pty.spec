@@ -7,13 +7,14 @@
 Summary:	PTY interface for Go
 Name:		golang-kr-pty
 Version:	0.1.git%{shortcommit}
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Other
 Url:		https://%{import_path}
 Source0:        https://%{import_path}/archive/%{prerelease}.tar.gz
 Provides:       golang(%{import_path}) = %{version}-%{release}
 BuildArch:	noarch
+BuildRequires:	golang
 
 %description
 Pty is a Go package for using UNIX pseudo-terminals.
