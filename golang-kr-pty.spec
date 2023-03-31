@@ -7,7 +7,7 @@
 Summary:	PTY interface for Go
 Name:		golang-kr-pty
 Version:	0.1.git%{shortcommit}
-Release:	7
+Release:	8
 License:	MIT
 Group:		Development/Other
 Url:		https://%{import_path}
